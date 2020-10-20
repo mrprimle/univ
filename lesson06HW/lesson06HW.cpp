@@ -115,6 +115,8 @@ bool while21(int n) {
     return false;
 }
 
+
+
 int main()
 {
     return 0;
