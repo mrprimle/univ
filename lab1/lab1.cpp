@@ -51,7 +51,7 @@ vector<int> prime_div(int n) {
 
 
 bool first_cond(int n) {
-    for (int i = 1; i <= sqrt(n); i++) {
+    for (int i = 2; i <= sqrt(n); i++) {
         if (n % (i * i) == 0) {
             return false;
         }
@@ -71,12 +71,12 @@ bool lab11(int n) {
     return first_cond(n) && second_cond(n);
 }
 
-void lab3(int dec) {
+void lab3(int dec, int p) {
     int bin = 0;
 
     for (int i = 0; dec > 0; i++) {
-        bin += (dec % 2) * pow(10, i);
-        dec /= 2;
+        bin += (dec % p) * pow(10, i);
+        dec /= p;
     }
 
     cout << bin;
@@ -84,7 +84,11 @@ void lab3(int dec) {
 
 int main()
 {
-    return 0;
+    for (int i = 1; i < 1000; i++) {
+        cout << lab11(i);
+    }
+
+    //lab3(10, 8);
 }
 
 
