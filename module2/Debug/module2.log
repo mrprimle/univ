@@ -1,0 +1,6 @@
+﻿  module2.cpp
+C:\Users\doros\source\repos\Tasks12\module2\module2.cpp(8,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\doros\source\repos\Tasks12\module2\module2.cpp(17,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\doros\source\repos\Tasks12\module2\module2.cpp(43,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\doros\source\repos\Tasks12\module2\module2.cpp(49,23): warning C4018: <: несоответствие типов со знаком и без знака
+  module2.vcxproj -> C:\Users\doros\source\repos\Tasks12\Debug\module2.exe

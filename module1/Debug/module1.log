@@ -1,0 +1,5 @@
+﻿  module1.cpp
+C:\Users\doros\source\repos\Tasks12\module1\module1.cpp(67,33): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\doros\source\repos\Tasks12\module1\module1.cpp(67,30): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\doros\source\repos\Tasks12\module1\module1.cpp(67,27): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  module1.vcxproj -> C:\Users\doros\source\repos\Tasks12\Debug\module1.exe

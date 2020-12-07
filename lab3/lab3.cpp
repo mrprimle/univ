@@ -7,7 +7,6 @@ double f(double);
 int main()
 {
     double a, b;
-    int n;
     const double pi = 3.1415926;
 
     cout << "Enter 'from': ";
@@ -25,8 +24,8 @@ double f(double x)
 {
     const double pi = 3.1415926;
     double y;
-    y = x * x;
-    //y = sin(x);
+    //y = x * x;
+    y = sin(x);
     return y;
 }
 double integral(double(*f)(double), double a, double b, int n)
