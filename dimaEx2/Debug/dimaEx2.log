@@ -1,0 +1,3 @@
+﻿  dimaEx2.cpp
+C:\Users\doros\source\repos\Tasks12\dimaEx2\dimaEx2.cpp(51,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  dimaEx2.vcxproj -> C:\Users\doros\source\repos\Tasks12\Debug\dimaEx2.exe

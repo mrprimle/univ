@@ -1,0 +1,11 @@
+﻿  dima.cpp
+C:\Users\doros\source\repos\Tasks12\dima\dima.cpp(8,37): error C2660: fopen: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208,28): message : см. объявление "fopen"
+C:\Users\doros\source\repos\Tasks12\dima\dima.cpp(12,17): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\doros\source\repos\Tasks12\dima\dima.cpp(12,17): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\doros\source\repos\Tasks12\dima\dima.cpp(12,17): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+C:\Users\doros\source\repos\Tasks12\dima\dima.cpp(12,17): message : этот аргумент используется в качестве размера буфера
+C:\Users\doros\source\repos\Tasks12\dima\dima.cpp(17,17): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\doros\source\repos\Tasks12\dima\dima.cpp(17,17): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\doros\source\repos\Tasks12\dima\dima.cpp(17,17): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+C:\Users\doros\source\repos\Tasks12\dima\dima.cpp(17,17): message : этот аргумент используется в качестве размера буфера

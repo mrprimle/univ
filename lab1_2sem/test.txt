@@ -1,0 +1,10 @@
+pr1, 271
+pr2, 738
+pr3, 69
+pr4, 315
+pr5, 420
+
+mikus, pasmark, 1, 0
+r, t, 0, 0
+ve, gyt, 0, 1
+er, ty, 1, 0

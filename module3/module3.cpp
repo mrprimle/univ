@@ -1,24 +1,10 @@
-﻿#include <iostream>
-using namespace std;
+﻿#include <stdio.h>
+#include <stdlib.h>
 
 
 int main()
 {
-    // PYTHON (no time, sorry)
-    /*
-    def noMin(arr):
-        return all(elem > 0 for elem in arr)
-
-    def module3(matrix):
-        for row in matrix:
-            if noMin(row):
-                res = 1
-                for el in row:
-                    res *= el
-                print(res)
-                    
-      
-     */
+    printf("Hello cccc \n");
 
 
     return 0;

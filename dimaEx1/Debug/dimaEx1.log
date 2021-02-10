@@ -1,0 +1,5 @@
+﻿  dimaEx1.cpp
+C:\Users\doros\source\repos\Tasks12\dimaEx1\dimaEx1.cpp(15,34): error C2440: инициализация: невозможно преобразовать "const char [11]" в "char *"
+C:\Users\doros\source\repos\Tasks12\dimaEx1\dimaEx1.cpp(15,20): message : При преобразовании из строкового литерала теряется квалификатор (см. /Zc:strictStrings)
+C:\Users\doros\source\repos\Tasks12\dimaEx1\dimaEx1.cpp(31,15): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\doros\source\repos\Tasks12\dimaEx1\dimaEx1.cpp(58,15): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
