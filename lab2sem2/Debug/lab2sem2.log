@@ -1,0 +1,6 @@
+﻿  lab2sem2.cpp
+C:\Users\doros\source\repos\Tasks12\lab2sem2\lab2sem2.cpp(22,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\doros\source\repos\Tasks12\lab2sem2\lab2sem2.cpp(36,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\doros\source\repos\Tasks12\lab2sem2\lab2sem2.cpp(53,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\doros\source\repos\Tasks12\lab2sem2\lab2sem2.cpp(73,27): warning C4018: <: несоответствие типов со знаком и без знака
+  lab2sem2.vcxproj -> C:\Users\doros\source\repos\Tasks12\Debug\lab2sem2.exe

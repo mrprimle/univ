@@ -75,6 +75,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dimaEx2", "dimaEx2\dimaEx2.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab1_2sem", "lab1_2sem\lab1_2sem.vcxproj", "{1B3EF707-3D5E-4E2A-83DB-B7D69CC290EB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab2sem2", "lab2sem2\lab2sem2.vcxproj", "{52C2BB29-6D50-413A-AD87-1CCEA3CF5961}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -371,6 +373,14 @@ Global
 		{1B3EF707-3D5E-4E2A-83DB-B7D69CC290EB}.Release|x64.Build.0 = Release|x64
 		{1B3EF707-3D5E-4E2A-83DB-B7D69CC290EB}.Release|x86.ActiveCfg = Release|Win32
 		{1B3EF707-3D5E-4E2A-83DB-B7D69CC290EB}.Release|x86.Build.0 = Release|Win32
+		{52C2BB29-6D50-413A-AD87-1CCEA3CF5961}.Debug|x64.ActiveCfg = Debug|x64
+		{52C2BB29-6D50-413A-AD87-1CCEA3CF5961}.Debug|x64.Build.0 = Debug|x64
+		{52C2BB29-6D50-413A-AD87-1CCEA3CF5961}.Debug|x86.ActiveCfg = Debug|Win32
+		{52C2BB29-6D50-413A-AD87-1CCEA3CF5961}.Debug|x86.Build.0 = Debug|Win32
+		{52C2BB29-6D50-413A-AD87-1CCEA3CF5961}.Release|x64.ActiveCfg = Release|x64
+		{52C2BB29-6D50-413A-AD87-1CCEA3CF5961}.Release|x64.Build.0 = Release|x64
+		{52C2BB29-6D50-413A-AD87-1CCEA3CF5961}.Release|x86.ActiveCfg = Release|Win32
+		{52C2BB29-6D50-413A-AD87-1CCEA3CF5961}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
