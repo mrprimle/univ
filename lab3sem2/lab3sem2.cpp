@@ -66,6 +66,18 @@ void mulMat(int** A, int** B) {
     }
 }
 
+void minMat(int** A) {
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            if (A[i][j] != 0) {
+                cout << "Val: " << A[i][j] << "; " << "Row: " << i << "; " << "Col: " << j << endl;
+            }
+        }
+    }
+}
+
 
 int main()
 {
@@ -109,6 +121,13 @@ int main()
     cout << "Mul:" << endl;
     mulMat(A, B);
     cout << "\n";
+
+    // MIN Mat
+    cout << "MIN:" << endl;
+    minMat(B);
+    cout << "\n";
+
+
     
     
 

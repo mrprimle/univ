@@ -142,7 +142,7 @@ int main()
     second->data = { "x", "~y"}; // assign data to second node 
     second->next = third;
 
-    third->data = {"z"}; // assign data to third node 
+    third->data = {"y", "z"}; // assign data to third node 
     third->next = NULL;
 
 
