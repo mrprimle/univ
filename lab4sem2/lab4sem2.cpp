@@ -22,18 +22,16 @@ nptr newNode(char c)
     return n;
 }
 
-// Function to build Expression Tree
+// build expression Tree
 nptr build(string& s)
 {
-
-    // Stack to hold nodes
     stack<nptr> stN;
 
     // Stack to hold operands
     stack<char> stC;
     nptr t, t1, t2;
 
-    // Prioritising the operators
+    // prioritising the operators
     int p[123] = { 0 };
     p['+'] = p['-'] = 1, p['/'] = p['*'] = 2, p['^'] = 3,
         p[')'] = 0;

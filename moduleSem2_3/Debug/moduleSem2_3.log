@@ -1,0 +1,6 @@
+﻿  moduleSem2_3.cpp
+C:\Users\doros\source\repos\Tasks12\moduleSem2_3\moduleSem2_3.cpp(38,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\doros\source\repos\Tasks12\moduleSem2_3\moduleSem2_3.cpp(195,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\doros\source\repos\Tasks12\moduleSem2_3\moduleSem2_3.cpp(218,15): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\doros\source\repos\Tasks12\moduleSem2_3\moduleSem2_3.cpp(191): warning C4715: performOperator: значение возвращается не при всех путях выполнения
+  moduleSem2_3.vcxproj -> C:\Users\doros\source\repos\Tasks12\Debug\moduleSem2_3.exe

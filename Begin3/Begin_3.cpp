@@ -1,150 +1,111 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
-#include <vector>
-#include <string>
+
 using namespace std;
 
-/* A binary tree node has data,
-pointer to left child and a
-pointer to right child */
 
-struct NodeData {
-    string en;
-    string ru;
-    int counter;
+struct Node {
+    int data;
+    struct Node* next;
+    struct Node* prev;
 };
 
-struct Node
+void traverseLL(struct Node* n)
 {
-    NodeData data;
-    Node* left, * right;
-};
-
-/* Helper function that allocates a
-new node */
-Node* newNode(NodeData data)
-{
-    Node* node = new Node;
-    node->data = data;
-    node->left = node->right = NULL;
-    return (node);
-}
-
-// Function to insert nodes in level order
-Node* insertLevelOrder(vector<NodeData*> arr, Node* root,
-    int i, int n)
-{
-    // Base case for recursion
-    if (i < n)
-    {
-        Node* temp = newNode(*arr[i]);
-        root = temp;
-
-        // insert left child
-        root->left = insertLevelOrder(arr,
-            root->left, 2 * i + 1, n);
-
-        // insert right child
-        root->right = insertLevelOrder(arr,
-            root->right, 2 * i + 2, n);
+    while (n != NULL) {
+        cout << n->data;
+        n = n->next;
     }
-    return root;
 }
-
-// Function to print tree nodes in
-// InOrder fashion
-void inOrder(Node* root)
+void traverseLLBack(struct Node* n)
 {
-    if (root != NULL)
-    {
-        inOrder(root->left);
-        cout << root->data.en << " " << root->data.ru << " " << root->data.counter << endl;
-        inOrder(root->right);
+    while (n != NULL) {
+        cout << n->data;
+        n = n->prev;
     }
 }
 
-void searchInorder(Node* root, string word)
+Node* deleteKey(Node* head, int key)
 {
-    if (root != NULL)
+    Node* tmp = head;
+
+    while (head->data == key)
     {
-        searchInorder(root->left, word);
-        //cout << root->data.en << " " << root->data.ru << " " << root->data.counter << endl;
-        if (root->data.en == word) {
-            cout << root->data.ru << endl;
-            root->data.counter++;
-            return;
+        Node* first = head->next;
+        Node* second = first->next;
+        Node* third = second->next;
+        head->next = second;
+        second->next = first;
+        first->next = third;
+        second->prev = head;
+        first->prev = second;
+        third->prev = first;
+        head = second;
+    }
+    while (tmp->next != NULL)
+    {
+        if (tmp->next->data == key)
+        {
+            Node* first = tmp->next->next;
+            Node* second = first->next;
+            Node* third = second->next;
+            tmp->next = second;
+            second->next = first;
+            first->next = third;
+            second->prev = tmp;
+            first->prev = second;
+            third->prev = first;
         }
-        searchInorder(root->right, word);
+        else
+        {
+            tmp = tmp->next;
+        }
     }
+    return head;
 }
 
-// Driver program to test above function
+
 int main()
 {
-    /*NodeData* one = new NodeData;
-    NodeData* two = new NodeData;
-    NodeData* three = new NodeData;
+    Node* head = new Node;
+    Node* second = new Node;
+    Node* third = new Node;
+    Node* fourth = new Node;
+    Node* fifth = new Node;
 
 
-    one->en = "dog";
-    one->ru = "sobaka";
-    one->counter = 1;
+    head->data = 1;
+    head->next = second;
+    head->prev = NULL;
 
-    two->en = "yes";
-    two->ru = "dah";
-    two->counter = 2;
+    second->data = 2;
+    second->next = third;
+    second->prev = head;
 
-    three->en = "no";
-    three->ru = "nett";
-    three->counter = 5;*/
+    third->data = 3;
+    third->next = fourth;
+    third->prev = second;
 
-    vector <NodeData*> nodes;
-    while (true) {
-        NodeData* node = new NodeData;
-        string firstInp;
-        cout << "Enter english word: ";
+    fourth->data = 8;
+    fourth->next = fifth;
+    fourth->prev = third;
 
-        // check for exit
-        cin >> firstInp;
-        if (firstInp == "0") {
-            cout << "\n";
-            break;
-        }
-
-        node->en = firstInp;
-        cout << "Enter russian translation: ";
-        cin >> node->ru;
-        cout << "Enter the counter: ";
-        cin >> node->counter;
-
-        nodes.push_back(node);
-    }
-
-    /*nodes.push_back(one);
-    nodes.push_back(two);
-    nodes.push_back(three);*/
+    fifth->data = 5;
+    fifth->next = NULL;
+    fifth->prev = fourth;
 
 
 
-    int n = nodes.size();
-    Node* root = insertLevelOrder(nodes, NULL, 0, n);
-    inOrder(root);
 
-    cout << endl << "Dictionary is ready, enter the word to translate." << endl;
-    while (true) {
-        string firstInp;
-        cout << "Enter english word: ";
 
-        // check for exit
-        cin >> firstInp;
-        if (firstInp == "0") {
-            cout << "\n";
-            break;
-        }
 
-        searchInorder(root, firstInp);
-    }
-    cout << "Final Tree:" << endl;
-    inOrder(root);
+
+    traverseLL(head);
+    cout << endl << "Result:" << endl;
+    traverseLL(deleteKey(head, 2));
+    cout << endl << "Result backwards (to check pointers):" << endl;
+    traverseLLBack(fifth);
+
+    return 0;
 }
