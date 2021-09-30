@@ -1,111 +1,60 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
-
 using namespace std;
-
-
-struct Node {
+// node of binary tree
+struct Node
+{
     int data;
-    struct Node* next;
-    struct Node* prev;
+    Node* lptr;
+    Node* rptr;
 };
 
-void traverseLL(struct Node* n)
+int findLevel(Node* root, Node* ptr, int level = 0)
 {
-    while (n != NULL) {
-        cout << n->data;
-        n = n->next;
-    }
+    if (root == NULL)
+        return -1;
+    if (root == ptr)
+        return level;
+    // If NULL or leaf Node
+    if (root->lptr == NULL && root->rptr == NULL)
+        return -1;
+    // Find If ptr is present in the left or right subtree.
+    int levelLeft = findLevel(root->lptr, ptr, level + 1);
+    int levelRight = findLevel(root->rptr, ptr, level + 1);
+    if (levelLeft == -1)
+        return levelRight;
+    else
+        return levelLeft;
 }
-void traverseLLBack(struct Node* n)
-{
-    while (n != NULL) {
-        cout << n->data;
-        n = n->prev;
-    }
-}
-
-Node* deleteKey(Node* head, int key)
-{
-    Node* tmp = head;
-
-    while (head->data == key)
-    {
-        Node* first = head->next;
-        Node* second = first->next;
-        Node* third = second->next;
-        head->next = second;
-        second->next = first;
-        first->next = third;
-        second->prev = head;
-        first->prev = second;
-        third->prev = first;
-        head = second;
-    }
-    while (tmp->next != NULL)
-    {
-        if (tmp->next->data == key)
-        {
-            Node* first = tmp->next->next;
-            Node* second = first->next;
-            Node* third = second->next;
-            tmp->next = second;
-            second->next = first;
-            first->next = third;
-            second->prev = tmp;
-            first->prev = second;
-            third->prev = first;
-        }
-        else
-        {
-            tmp = tmp->next;
-        }
-    }
-    return head;
-}
-
 
 int main()
 {
-    Node* head = new Node;
-    Node* second = new Node;
-    Node* third = new Node;
-    Node* fourth = new Node;
-    Node* fifth = new Node;
+    // create a binary tree
+    Node* root = new Node(20);
+    root->left = getnode(10);
+    root->right = getnode(30);
+    root->left->left = getnode(5);
+    root->left->right = getnode(15);
+    root->left->right->left = getnode(12);
+    root->right->left = getnode(25);
+    root->right->right = getnode(40);
 
+    // return level of node
+    int level = getlevel(root, 30);
+    (level != 0) ? (cout << "level of node 30 is " << level << endl) :
+        (cout << "node 30 not found" << endl);
 
-    head->data = 1;
-    head->next = second;
-    head->prev = NULL;
+    level = getlevel(root, 12);
+    (level != 0) ? (cout << "level of node 12 is " << level << endl) :
+        (cout << "node 12 not found" << endl);
 
-    second->data = 2;
-    second->next = third;
-    second->prev = head;
+    level = getlevel(root, 25);
+    (level != 0) ? (cout << "level of node 25 is " << level << endl) :
+        (cout << "node 25 not found" << endl);
 
-    third->data = 3;
-    third->next = fourth;
-    third->prev = second;
-
-    fourth->data = 8;
-    fourth->next = fifth;
-    fourth->prev = third;
-
-    fifth->data = 5;
-    fifth->next = NULL;
-    fifth->prev = fourth;
-
-
-
-
-
-
-
-    traverseLL(head);
-    cout << endl << "Result:" << endl;
-    traverseLL(deleteKey(head, 2));
-    cout << endl << "Result backwards (to check pointers):" << endl;
-    traverseLLBack(fifth);
-
+    level = getlevel(root, 27);
+    (level != 0) ? (cout << "level of node 27 is " << level << endl) :
+        (cout << "node 27 not found" << endl);
     return 0;
 }

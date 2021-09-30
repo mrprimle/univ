@@ -1,1 +1,12 @@
-﻿  Begin3.vcxproj -> C:\Users\doros\source\repos\Tasks12\Debug\Begin_3.exe
+﻿  Begin_3.cpp
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(25,5): error C2065: queue: необъявленный идентификатор
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(25,16): error C2059: синтаксическая ошибка: >
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(27,5): error C2065: q: необъявленный идентификатор
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(32,5): error C2065: q: необъявленный идентификатор
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(33,13): error C2065: q: необъявленный идентификатор
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(34,22): error C2065: q: необъявленный идентификатор
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(35,9): error C2065: q: необъявленный идентификатор
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(37,17): error C2065: q: необъявленный идентификатор
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(38,17): error C2065: q: необъявленный идентификатор
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(47,17): error C2065: q: необъявленный идентификатор
+C:\Users\doros\source\repos\Tasks12\Begin3\Begin_3.cpp(50,17): error C2065: q: необъявленный идентификатор

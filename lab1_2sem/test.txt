@@ -9,3 +9,4 @@ r, t, 0, 0
 ve, gyt, 0, 1
 er, ty, 1, 0
 nnn, dddd, 1, 0
+tyu, bg, 0, 0
